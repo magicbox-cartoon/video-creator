@@ -1,4 +1,4 @@
-const apiKey = "YOUR_DID_API_KEY"; // Replace this with your actual D-ID API Key
+const apiKey = "bWFnaWNib3hjYXJ0b29uQGdtYWlsLmNvbQ:2y1fFwNe6X_D-3Bk8ONUt"; // Replace this with your actual D-ID API Key
 
 async function generateVideo() {
   const imgFile = document.getElementById("imageInput").files[0];
