@@ -1,19 +1,15 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
-}
-
-.upload-box {
-  background: white;
+  font-family: Arial, sans-serif;
   padding: 20px;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 400px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #ccc;
+  background: #f8f8f8;
 }
 
-textarea {
+textarea, select {
   width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
 }

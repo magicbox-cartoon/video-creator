@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Text to Animated Video</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>AI Video Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Create Animated Video</h1>
+  <h1>AI Video Generator</h1>
+  
+  <label>Upload Image:</label>
+  <input type="file" id="imageInput"><br><br>
 
-    <label>Upload Photo:</label>
-    <input type="file" id="photoUpload" accept="image/*" /><br />
+  <label>Enter Text:</label><br>
+  <textarea id="textInput" rows="5" cols="40" placeholder="Enter your script..."></textarea><br><br>
 
-    <label>Enter Text:</label>
-    <textarea id="textInput" placeholder="Enter your story..."></textarea><br />
+  <label>Select Aspect Ratio:</label>
+  <select id="ratioSelect">
+    <option value="16:9">Landscape (16:9)</option>
+    <option value="9:16">Vertical (9:16)</option>
+    <option value="1:1">Square (1:1)</option>
+  </select><br><br>
 
-    <label>Upload Audio:</label>
-    <input type="file" id="audioUpload" accept="audio/*" /><br />
-
-    <button onclick="generateVideo()">Generate Video</button>
-
-    <div id="previewArea">
-      <h2>Preview</h2>
-      <canvas id="canvas" width="640" height="360"></canvas>
-      <video id="finalVideo" controls style="display:none;"></video>
-    </div>
-  </div>
+  <button onclick="generateVideo()">Generate Video</button>
+  <div id="output"></div>
 
   <script src="script.js"></script>
 </body>
